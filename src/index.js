@@ -6,10 +6,11 @@ const container = document.getElementById('root');
 const root = ReactDOMClient.createRoot(container);
 
 const TodoList = () => {
+  const items = ['Learn React', 'Create Awesome App'];
   return (
     <ul>
-      <li>Learn React</li>
-      <li>Create awesome app</li>
+      <li>{items[0]}</li>
+      <li>{items[1]}</li>
     </ul>
   );
 };
