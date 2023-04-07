@@ -1,27 +1,13 @@
 import React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
 
+import AppHeader from './components/app-header';
+import TodoList from './components/todo-list';
+import SearchPanel from './components/search-panel';
+
 const container = document.getElementById('root');
 
 const root = ReactDOMClient.createRoot(container);
-
-const TodoList = () => {
-  const items = ['Learn React', 'Create Awesome App'];
-  return (
-    <ul>
-      <li>{items[0]}</li>
-      <li>{items[1]}</li>
-    </ul>
-  );
-};
-
-const AppHeader = () => {
-  return <h1>My Todo List</h1>;
-};
-
-const SearchPanel = () => {
-  return <input placeholder="search" />;
-};
 
 const App = () => {
   return (
